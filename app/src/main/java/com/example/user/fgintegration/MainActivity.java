@@ -27,6 +27,13 @@ public class MainActivity extends AppCompatActivity {
 
     CallbackManager callbackManager;
 
+    //for reference
+    //https://www.studytutorial.in/android-facebook-integration-and-login-tutorial
+    //http://androidlift.info/2016/01/01/facebook-login-android-example/
+
+    //This tutorial get kasheskey through coding.
+    //http://www.theappguruz.com/blog/android-facebook-integration-tutorial
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
