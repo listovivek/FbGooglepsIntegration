@@ -7,12 +7,26 @@
     tools:context="com.example.user.fgintegration.MainActivity">
 
    <com.facebook.login.widget.LoginButton
-      android:id="@+id/login_button"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:gravity="center_horizontal"
-       />
+       android:id="@+id/login_button"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginBottom="16dp"
+       android:gravity="center_horizontal"
+       app:layout_constraintBottom_toTopOf="@+id/google_sign_in_button"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_chainStyle="packed" />
 
+   <com.google.android.gms.common.SignInButton
+       android:id="@+id/google_sign_in_button"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginBottom="1dp"
+       android:layout_marginEnd="34dp"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="@+id/login_button"
+       app:layout_constraintTop_toBottomOf="@+id/login_button" />
 
 
 </android.support.constraint.ConstraintLayout>
